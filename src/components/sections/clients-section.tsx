@@ -24,14 +24,14 @@ const ClientSection = () => {
     return (
         <section className="grid place-content-start gap-10 py-20 px-20 mt-10 min-h-screen">
             <div className="flex flex-col items-center justify-center gap-4 size-full">
-                <h1 className="text-4xl font-bold text-primary">
+                <h1 className="text-2xl md:text-4xl font-bold text-primary">
                     we are proud of our clients, we work with a diverse range of clients from a different sectors.
                 </h1>
                 <div className="grid grid-cols-2 gap-4 size-full">
                     {clients.map((client) => (
                         <div className="flex items-start gap-2">
-                            <CheckboxIcon className="h-8 w-auto" />
-                            <h1 className="text-2xl font-bold">
+                            <CheckboxIcon className="h-5 w-auto" />
+                            <h1 className="text-sm font-bold">
                                 {client}
                             </h1>
                         </div>

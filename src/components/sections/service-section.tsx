@@ -47,7 +47,7 @@ const ServiceSection = () => {
             <h1 className="text-6xl font-bold text-primary">
                 Service
             </h1>
-            <div className="grid grid-cols-3 gap-4 size-full">
+            <div className="grid md:grid-cols-3 gap-4 size-full">
                 {service.map((item) => (
                     <MagicCard
                         className="cursor-pointer flex flex-col items-start justify-start gap-4 shadow-xl p-4"

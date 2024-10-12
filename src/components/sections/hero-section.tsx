@@ -4,8 +4,8 @@ import { Card } from "../ui/card"
 
 const HeroSection = () => {
     return (
-        <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 text-center">
-            <div className="flex flex-col items-center justify-center gap-4 h-[50vh]">
+        <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 text-center min-h-screen">
+            <div className="flex flex-col items-center justify-center gap-4 md:h-[50vh]">
                 <h1 className="text-6xl font-bold text-primary">
                     digital agency company
                 </h1>
@@ -24,7 +24,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <Card className="relative w-full h-[50vh] max-w-5xl">
+            <Card className="relative w-full md:h-[50vh] max-w-5xl">
                 <h1 className="text-2xl font-bold absolute top-6 left-6 text-white text-border shadow-sm backdrop-blur p-2 rounded-lg overflow-hidden">
                     choose us
                 </h1>
