@@ -1,8 +1,14 @@
-import { Button } from './components/ui/button'
+import HeroSection from './components/sections/hero-section'
+import Navigation from './components/shared/navigation'
 
 function App() {
   return (
-    <Button>Hello world</Button>
+    <>
+      <Navigation />
+      <main className="flex min-h-screen flex-col items-center justify-center px-6 py-12 text-center">
+        <HeroSection />
+      </main>
+    </>
   )
 }
 
