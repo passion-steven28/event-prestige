@@ -1,48 +1,67 @@
-import { BoxIcon } from "@radix-ui/react-icons"
+import { RulerHorizontalIcon, SpeakerLoudIcon, VideoIcon } from "@radix-ui/react-icons"
+import { Headphones, LampCeiling } from 'lucide-react';
 import { MagicCard } from "../ui/magic-card"
 
 
 const service = [
     {
-        title: 'Video',
+        title: 'VIDEO',
         description: [
-            'high definition projector',
-            'HDMI',
-            'live feed',
-            'professional crew service'
-        ]
+            'High Definition DLP projectors',
+            'Avolite Ai media server',
+            'Different pixels LED Screens',
+            'Live feed',
+            'Event coverage',
+            'Professional crew services'
+        ],
+        icon: <VideoIcon className="h-8 w-auto" />
     },
     {
-        title: 'Design',
+        title: 'DESIGN',
         description: [
-            'custom design',
-            'branding',
-            'logo design',
-            'website design'
-        ]
+            'Innovative customized stage design',
+            'Creative ideas and concept development',
+            'Autocad layouts and 3D renders',
+            'Light simulation',
+            'Video animation and walk through',
+            'Creative space planning and project management',
+            'Campaign Design',
+            'Brochure, business cards and merchandise design',
+            'Brand creation and re-branding'
+        ],
+        icon: <RulerHorizontalIcon className="h-8 w-auto" />
     },
     {
-        title: 'Audio',
+        title: 'AUDIO',
         description: [
-            'high definition projector',
-            'HDMI',
-            'live feed',
-            'professional crew service'
-        ]
+            'High quality sound system',
+            'Sound system venue design',
+            'Monitor and front of house live mixing',
+            'Professional audio engineering'
+        ],
+        icon: <SpeakerLoudIcon className="h-8 w-auto" />
     },
     {
-        title: 'Photography',
+        title: 'LIGHTING AND TRUSSES',
         description: [
-            'high definition projector',
-            'HDMI',
-            'live feed',
-            'professional crew service'
-        ]
+            'Latest technology lighting console',
+            'Intelligent and generic fixtures',
+            'High quality and various types of trusses'
+        ],
+        icon: <LampCeiling className="h-8 w-auto" />
+    },
+    {
+        title: 'INTERPRETATION SERVICES',
+        description: [
+            'Conference services',
+            'Soundproof translation booths',
+            'Translation and professional interpreters'
+        ],
+        icon: <Headphones className="h-8 w-auto" />
     }
 ]
 
-const ServiceSection = () => {
-    return (
+const ServiceSection = () => {    return (
         <section className="flex flex-col items-center justify-center gap-10 py-20 px-20 mt-10 text-center">
             <h1 className="text-6xl font-bold text-primary">
                 Service
@@ -53,8 +72,8 @@ const ServiceSection = () => {
                         className="cursor-pointer flex flex-col items-start justify-start gap-4 shadow-xl p-4"
                     >
                         <div className="flex items-center gap-2">
-                            <BoxIcon className="h-8 w-auto" />
-                            <h1 className="text-2xl font-bold">
+                            {item.icon}
+                            <h1 className="text-xl font-bold">
                                 {item.title}
                             </h1>
                         </div>
@@ -63,7 +82,7 @@ const ServiceSection = () => {
                                 {item.description.map((desc) => (
                                     <li
                                         key={desc}
-                                        className="text-lg font-semibold list-disc list-inside"
+                                        className="text-sm font-semibold list-disc list-inside"
                                     >
                                         {desc}
                                     </li>

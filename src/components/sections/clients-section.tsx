@@ -2,22 +2,19 @@ import { CheckboxIcon } from "@radix-ui/react-icons"
 import Marquee from "../ui/marquee"
 
 const clients = [
-    'government',
-    'education',
-    'healthcare',
-    'finance',
-    'retail',
-    'hospitality',
-    'real estate',
-    'technology',
-    'media',
-    'energy',
-    'automotive',
-    'logistics',
-    'construction',
-    'transportation',
-    'manufacturing',
-    'agriculture',
+    "Government(s)",
+    "Regional Economic Communities EAC, SADC, AfCFTA, EU",
+    "International organization's",
+    "NGO’s",
+    "Companies",
+    "UNITED REPUBLIC OF TANZANIA",
+    "EVENTS PRESTIGE 14 COMPANY LIMITED",
+    "Embassies",
+    "Professional Bodies",
+    "Hotel & Resort",
+    "Tour & Travel Agency",
+    "Restaurants",
+    "Retail Franchise Store"
 ]
 
 const ClientSection = () => {

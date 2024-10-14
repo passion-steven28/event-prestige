@@ -7,10 +7,11 @@ const HeroSection = () => {
         <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 text-center">
             <div className="flex flex-col items-center justify-center gap-4 md:h-[50vh]">
                 <h1 className="text-6xl font-bold text-primary">
-                    digital agency company
+                    EVENTS PRESTIGE LIMITED 
                 </h1>
                 <p className="text-2xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.
+                    As a leading professional and corporate events management company, we are a dynamic team with a proven track record of delivering innovative
+                    and engaging events that exceed our clients' expectations.
                 </p>
                 <div className="flex gap-4 items-center">
                     <Button>

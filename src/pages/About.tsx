@@ -5,45 +5,37 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const team = [
     {
-        name: 'John Doe',
+        name: 'Festus B. Matuja',
         designation: 'Managing Director',
         image: '/images/1.jpg',
-        phone: '0747776063',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
-        experience: 'since 2013',
+        phone: '+255 713 077 788',
+        bio: 'Qualification:Advanced Diploma in Insurance and Risk Management- IFM Ordinary Diploma in Accounts - at Njiro Arusha',
+        experience: 'since 2004',
     },
     {
-        name: 'John Doe',
-        designation: 'Managing Director',
+        name: 'Josephat F. Lyamuya',
+        designation: 'Finance Director',
         image: '/images/1.jpg',
-        phone: '0747776063',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
-        experience: 'since 2013',
+        phone: '+255 717 515 186',
+        bio: ' Masters of Science in Economics and Finance for Development',
+        experience: ': Financial and event assistant over 16 years of experience',
     },
     {
-        name: 'John Doe',
-        designation: 'Managing Director',
+        name: 'Grayson M. Mlaponi',
+        designation: 'Operation & Administration Director',
         image: '/images/1.jpg',
-        phone: '0747776063',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
-        experience: 'since 2013',
+        phone: '+255 788 775 433',
+        bio: '-Bachelor of Commerce in Accounting(UDSM -).',
+        experience: 'over 5 years of exprience as an accountant',
     },
     {
-        name: 'John Doe',
-        designation: 'Managing Director',
+        name: 'Evance M. Chuwa',
+        designation: 'Technical Director',
         image: '/images/1.jpg',
-        phone: '0747776063',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
-        experience: 'since 2013',
+        phone: '+255 768 774 777',
+        bio: '-Information Communication',
+        experience: ': Events Assistant since 2019',
     },
-    {
-        name: 'John Doe',
-        designation: 'Managing Director',
-        image: '/images/1.jpg',
-        phone: '0747776063',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
-        experience: 'since 2013',
-    }
 ]
 
 const AboutPage = () => {
@@ -68,21 +60,21 @@ const AboutPage = () => {
                     <div className="grid md:grid-cols-2 gap-4 size-full">
                         {team.map((team) => (
                             <Card key={team.name} className="flex flex-col md:flex-row items-center gap-2">
-                                <div className="relative h-20 w-20 md:h-[10rem] md:w-[50rem]">
+                                {/* <div className="relative h-20 w-20 md:h-[10rem] md:w-[50rem]">
                                     <img
                                         src={team.image}
                                         alt=""
                                         className="size-full object-cover rounded-full"
                                     />
-                                </div>
+                                </div> */}
                                 <CardContent>
                                     <h1 className="text-md font-bold">
                                         {team.designation}
                                     </h1>
-                                    <h3 className="text-sm">{team.name}</h3>
-                                    <h3 className="text-sm">{team.phone}</h3>
-                                    <p className="text-sm">{team.bio}</p>
-                                    <p className="text-sm">{team.experience}</p>
+                                    <h3 className="text-sm font-semibold">name: {team.name}</h3>
+                                    <h3 className="text-sm font-semibold">phone: {team.phone}</h3>
+                                    <p className="text-sm font-semibold">bio: {team.bio}</p>
+                                    <p className="text-sm font-semibold">experience: {team.experience}</p>
                                 </CardContent>
                             </Card>
                         ))}
