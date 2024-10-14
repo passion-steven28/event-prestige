@@ -1,11 +1,18 @@
+const images = [
+    '/images/IMG-20241014-WA0021.jpg',
+    '/images/IMG-20241014-WA0028.jpg',
+    '/images/IMG-20241014-WA0026.jpg',
+    '/images/IMG-20241014-WA0024.jpg',
+]
+
 const AboutSection = () => {
     return (
-        <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 mt-10 text-center">
+        <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 text-center">
             <h1 className="text-6xl font-bold text-primary">
                 About Us
             </h1>
             <div className="flex flex-col md:flex-row justify-between items-start gap-4 w-full">
-                <p className="text-2xl w-full text-left">
+                <p className="text-xl w-full text-left">
                     Events Prestige Ltd is a Tanzanian-owned
                     company specializing in providing
                     professional, corporate and social event
@@ -29,51 +36,14 @@ const AboutSection = () => {
                     results to our clients.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 items-center w-full">
-                    <div className="flex flex-col gap-4">
-                        <div className="relative h-20">
-                            <img
-                                src="/images/1.jpg"
-                                className="size-full rounded-lg object-cover"
-                            />
-                        </div>
-                        <h1 className="text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim neque repudiandae
-                        </h1>
-                    </div>
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <div className="relative h-20">
-                            <img
-                                src="/images/1.jpg"
-                                className="size-full rounded-lg object-cover"
-                            />
-                        </div>
-                        <h1 className="text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim neque repudiandae
-                        </h1>
-                    </div>
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <div className="relative h-20">
-                            <img
-                                src="/images/1.jpg"
-                                className="size-full rounded-lg object-cover"
-                            />
-                        </div>
-                        <h1 className="text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim neque repudiandae
-                        </h1>
-                    </div>
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <div className="relative h-20">
-                            <img
-                                src="/images/1.jpg"
-                                className="size-full rounded-lg object-cover"
-                            />
-                        </div>
-                        <h1 className="text-sm font-semibold">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim neque repudiandae
-                        </h1>
-                    </div>
-
+                        {images.map((image, index) => (
+                            <div className="relative h-30" key={index}>
+                                <img
+                                    src={image}
+                                    className="size-full rounded-lg object-cover"
+                                />
+                            </div>
+                        ))}
                 </div>
             </div>
         </section>

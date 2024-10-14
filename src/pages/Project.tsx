@@ -1,39 +1,55 @@
 import ContactSection from "@/components/sections/contact-section"
 import Navigation from "@/components/shared/navigation"
-import { Card, CardTitle } from "@/components/ui/card"
+import { Card } from "@/components/ui/card"
 
 const events = [
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0021.jpg',
     },
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0036.jpg',
     },
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0035.jpg',
     },
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0024.jpg',
     },
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0025.jpg',
     },
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0026.jpg',
     },
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0027.jpg',
     },
     {
         name: 'event 1',
-        image: '/images/1.jpg',
+        image: '/images/IMG-20241014-WA0028.jpg',
+    },
+    {
+        name: 'event 1',
+        image: '/images/IMG-20241014-WA0033.jpg',
+    },
+    {
+        name: 'event 1',
+        image: '/images/IMG-20241014-WA0030.jpg',
+    },
+    {
+        name: 'event 1',
+        image: '/images/IMG-20241014-WA0031.jpg',
+    },
+    {
+        name: 'event 1',
+        image: '/images/IMG-20241014-WA0032.jpg',
     },
 ]
 
@@ -41,7 +57,7 @@ const ProjectPage = () => {
     return (
         <div>
             <Navigation />
-            <main className="grid grid-cols-1 md:grid-cols-12 min-h-screen gap-4">
+            <main className="grid grid-cols-1 md:grid-cols-12 min-h-screen gap-4 px-4">
                 <div className='md:col-start-3 md:col-end-11 flex flex-col gap-2 items-center justify-center '>
                     <h1 className="text-4xl font-bold text-primary">
                         our projects
@@ -57,9 +73,9 @@ const ProjectPage = () => {
                                         className="size-full object-cover"
                                     />
                                 </div>
-                                <CardTitle className="mx-4 py-2">
+                                {/* <CardTitle className="mx-4 py-2">
                                     {event.name}
-                                </CardTitle>
+                                </CardTitle> */}
                             </Card>
                         ))}
                     </div>

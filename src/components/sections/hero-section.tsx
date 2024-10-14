@@ -1,13 +1,14 @@
 import { ArrowDownIcon, ArrowUpIcon } from "@radix-ui/react-icons"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
+import { Link } from "react-router-dom"
 
 const HeroSection = () => {
     return (
         <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 text-center">
             <div className="flex flex-col items-center justify-center gap-4 md:h-[50vh]">
                 <h1 className="text-6xl font-bold text-primary">
-                    EVENTS PRESTIGE LIMITED 
+                    EVENTS PRESTIGE LIMITED
                 </h1>
                 <p className="text-2xl">
                     As a leading professional and corporate events management company, we are a dynamic team with a proven track record of delivering innovative
@@ -18,10 +19,12 @@ const HeroSection = () => {
                         Get Started
                         <ArrowUpIcon className="ml-2 h-4 w-4 rotate-12 font-bold" aria-hidden="true" />
                     </Button>
-                    <Button variant={'outline'}>
-                        Learn More
-                        <ArrowDownIcon className="ml-2 h-4 w-4 -rotate-12 font-bold" aria-hidden="true" />
-                    </Button>
+                    <Link to={'/about'}>
+                        <Button variant={'outline'}>
+                            Learn More
+                            <ArrowDownIcon className="ml-2 h-4 w-4 -rotate-12 font-bold" aria-hidden="true" />
+                        </Button>
+                    </Link>
                 </div>
             </div>
 
@@ -29,12 +32,12 @@ const HeroSection = () => {
                 <h1 className="text-2xl font-bold absolute top-6 left-6 text-white text-border shadow-sm backdrop-blur p-2 rounded-lg overflow-hidden z-10">
                     choose us
                 </h1>
-                <div className="relative">
-                <img
-                    src="/images/1.jpg"
-                    className="size-full rounded-lg object-cover"
+                <div className="relative h-[25rem]">
+                    <img
+                        src='/images/IMG-20241014-WA0042.jpg'
+                        className="size-full rounded-lg object-cover"
                     />
-                    </div>
+                </div>
             </Card>
         </section>
     )

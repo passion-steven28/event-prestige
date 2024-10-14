@@ -26,7 +26,7 @@ const ContactSection = () => {
 
             <div className="flex-1">
                 <img
-                    src="/images/1.jpg"
+                    src='/images/IMG-20241014-WA0022.jpg'
                     className="size-full rounded-lg object-cover"
                 />
             </div>

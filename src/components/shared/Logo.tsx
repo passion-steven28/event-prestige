@@ -1,15 +1,17 @@
+import { Link } from "react-router-dom"
+
 const Logo = () => {
     return (
-        <a
-            href='/'
+        <Link
+            to='/'
             className="flex items-center gap-2 text-xl font-bold text-primary"
         >
             <img
-                src="./logo.svg"
+                src="/images/IMG-20241014-WA0038.jpg"
                 alt="logo"
                 className="h-8 w-auto"
             />
-        </a>
+        </Link>
     )
 }
 
