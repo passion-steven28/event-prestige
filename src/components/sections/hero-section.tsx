@@ -4,7 +4,7 @@ import { Card } from "../ui/card"
 
 const HeroSection = () => {
     return (
-        <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 text-center min-h-screen">
+        <section className="flex flex-col items-center justify-center gap-10 py-20 px-6 text-center">
             <div className="flex flex-col items-center justify-center gap-4 md:h-[50vh]">
                 <h1 className="text-6xl font-bold text-primary">
                     digital agency company
@@ -24,14 +24,16 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <Card className="relative w-full md:h-[50vh] max-w-5xl">
-                <h1 className="text-2xl font-bold absolute top-6 left-6 text-white text-border shadow-sm backdrop-blur p-2 rounded-lg overflow-hidden">
+            <Card className="relative w-full xl:h-[50vh] max-w-5xl">
+                <h1 className="text-2xl font-bold absolute top-6 left-6 text-white text-border shadow-sm backdrop-blur p-2 rounded-lg overflow-hidden z-10">
                     choose us
                 </h1>
+                <div className="relative">
                 <img
-                    src="https://images.unsplash.com/photo-1713947504519-755547cf930e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="/images/1.jpg"
                     className="size-full rounded-lg object-cover"
-                />
+                    />
+                    </div>
             </Card>
         </section>
     )

@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 import Logo from "./Logo"
 
 const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Projects', href: '/project' },
 ]
 
 const Navigation = () => {
@@ -12,13 +13,13 @@ const Navigation = () => {
             <Logo />
             <nav className="flex items-center gap-4">
                 {navLinks.map((link) => (
-                    <a
+                    <Link
                         key={link.name}
-                        href={link.href}
+                        to={link.href}
                         className="text-xl font-bold text-primary hover:underline"
                     >
                         {link.name}
-                    </a>
+                    </Link>
                 ))}
             </nav>
         </div>

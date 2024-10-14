@@ -22,7 +22,7 @@ const clients = [
 
 const ClientSection = () => {
     return (
-        <section className="grid place-content-start gap-10 py-20 px-20 mt-10 min-h-screen">
+        <section className="grid place-content-start gap-10 py-20 px-20 mt-10">
             <div className="flex flex-col items-center justify-center gap-4 size-full">
                 <h1 className="text-2xl md:text-4xl font-bold text-primary">
                     we are proud of our clients, we work with a diverse range of clients from a different sectors.

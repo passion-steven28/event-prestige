@@ -43,7 +43,7 @@ const service = [
 
 const ServiceSection = () => {
     return (
-        <section className="flex flex-col items-center justify-center gap-10 py-20 px-20 mt-10 text-center min-h-screen">
+        <section className="flex flex-col items-center justify-center gap-10 py-20 px-20 mt-10 text-center">
             <h1 className="text-6xl font-bold text-primary">
                 Service
             </h1>
