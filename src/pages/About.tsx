@@ -1,5 +1,5 @@
 import AboutSection from "@/components/sections/about-section"
-import ContactSection from "@/components/sections/contact-section"
+import FooterSection from "@/components/sections/footer-section"
 import Navigation from "@/components/shared/navigation"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -81,7 +81,7 @@ const AboutPage = () => {
                     </div>
                 </div>
                 <div className='md:col-start-1 md:col-end-13'>
-                    <ContactSection />
+                    <FooterSection />
                 </div>
             </main>
         </div>

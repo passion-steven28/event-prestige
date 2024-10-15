@@ -3,7 +3,7 @@ import { Card } from "../ui/card"
 
 const MissionSection = () => {
     return (
-        <section className="bg-amber-200 w-full flex items-center justify-center p-4 md:p-20 md:h-[40vh]">
+        <section className="bg-white w-full flex items-center justify-center p-4 md:p-20 md:h-[40vh]">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-content-center">
                 <Card className="flex flex-col items-center justify-center p-4">
                     <div className="flex flex-col items-center justify-center mb-4">

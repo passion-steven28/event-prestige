@@ -1,4 +1,4 @@
-import ContactSection from "@/components/sections/contact-section"
+import FooterSection from "@/components/sections/footer-section"
 import Navigation from "@/components/shared/navigation"
 import { Card } from "@/components/ui/card"
 
@@ -81,7 +81,7 @@ const ProjectPage = () => {
                     </div>
                 </div>
                 <div className='md:col-start-1 md:col-end-13 mt-10'>
-                    <ContactSection />
+                    <FooterSection />
                 </div>
             </main>
         </div>
