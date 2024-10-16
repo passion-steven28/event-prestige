@@ -37,7 +37,7 @@ const Navigation = () => {
                                 <Link
                                     key={link.name}
                                     to={link.href}
-                                    className="text-xs font-bold text-primary hover:underline"
+                                    className="text-xl font-bold text-primary hover:underline"
                                 >
                                     {link.name}
                                 </Link>
