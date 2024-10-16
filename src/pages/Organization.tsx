@@ -50,7 +50,7 @@ const OrganizationPage = () => {
                         our organization structure
                     </h1>
                     <div>
-                        <img src="/images/org.png" alt="" />
+                        <img src="/images/org.jpg" alt="" />
                     </div>
                 </div>
                 <div className='md:col-start-3 md:col-end-11 flex flex-col gap-2 items-center justify-center '>
