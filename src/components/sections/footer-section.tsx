@@ -1,5 +1,4 @@
-import { MessageCircle } from "lucide-react"
-import { Button } from "../ui/button"
+import { Link } from "react-router-dom"
 
 const footerLinks = [
     {
@@ -18,9 +17,13 @@ const footerLinks = [
                 url: '/about'
             },
             {
-                name: 'contact',
-                url: '/contact'
-            }
+                name: 'project',
+                url: '/project'
+            },
+            {
+                name: 'organization',
+                url: '/organization'
+            },
         ]
     },
     {
@@ -48,8 +51,8 @@ const footerLinks = [
 
 const FooterSection = () => {
     return (
-        <footer className="flex flex-col items-center justify-center gap-10 bg-[#8c7a62] p-4 min-h-[60vh] rounded-tl-[5rem] rounded-tr-[5rem] mt-2">
-            <div className="flex flex-col items-center gap-2 bg-white p-10 w-[70%] rounded-xl">
+        <footer className="flex flex-col items-center justify-center gap-10 bg-[#8c7a62] p-4 min-h-[60vh] mt-2">
+            {/* <div className="flex flex-col items-center gap-2 bg-white p-10 w-[70%] rounded-xl">
                 <h1 className="text-md md:text-3xl font-semibold">ready to launch your digital event</h1>
                 <p className="text-xs md:text-md">We are ready to launch your digital event</p>
                 <a href="mailto:josephat.focus@gmail.com">
@@ -58,7 +61,7 @@ const FooterSection = () => {
                         lets talk
                     </Button>
                 </a>
-            </div>
+            </div> */}
 
             <div className="grid md:grid-cols-2 place-items-start gap-4 h-full">
                 <div>
@@ -90,9 +93,11 @@ const FooterSection = () => {
                             <ul className="flex flex-col items-start gap-1">
                                 {item.links.map((link, index) => (
                                     <li key={index} className="text-lg font-semibold">
-                                        <a href={link.url} className="underline">
+                                        <Link
+                                            to={link.url}
+                                            className="underline">
                                             {link.name}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
