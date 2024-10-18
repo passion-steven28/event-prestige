@@ -29,7 +29,7 @@ const ServicesPage = () => {
     return (
         <div>
             <Navigation />
-            <main className="grid grid-cols-1 md:grid-cols-12 min-h-screen gap-4">
+            <main className="grid grid-cols-1 md:grid-cols-12 min-h-screen gap-4 capitalize">
                 <div className='md:col-start-3 md:col-end-11'>
                     <h1 className="text-6xl font-bold text-primary text-center">
                         what we do
